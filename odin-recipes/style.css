@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --nav-bg-color: rgba(255, 255, 255, 0.1);
+    --bg-color: #171f2b;
+    --second-bg-color: #1f2733;
+    --third-bg-color: #2d3542;
+    --main-color: #0ef;
+    --main-color2: #00abf0;
+    --white-color: #fff;
+    --tab-list-color: #7c8594;
+}
+
+body {
+    align-items: center;
+    color: var(--white-color);
+    background-color: var(--bg-color);
+    font-size: 1.2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    background-color: var(--second-bg-color);
+    padding: 1rem 0;
+    border-radius: 10px;
+    margin: 2rem auto;
+    width: 50%;
+}
+
+.recipes {
+    border: solid 1px var(--main-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    background-color: var(--second-bg-color);
+}
+
+.recipes .recipe-list {
+    text-align: center;
+}
+
+.nav .nav-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-list li {
+    position: relative;
+    display: flex;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-list li:hover,
+.nav-list li.active {
+    color: var(--main-color);
+}
+
+.tooltip {
+    position: absolute;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.3rem 1rem;
+    background: var(--main-color);
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    font-weight: 500;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.nav-list li:hover .tooltip,
+a:hover .tooltip,
+.portfolio-item:hover .work-info {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn {
+    display: inline-flex;
+    padding: 1.2rem 3rem;
+    background: var(--main-color2);
+    border-radius: 5rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    font-weight: 600;
+    transition: 0.3s;
+    margin-top: 1.5rem;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.home-info .recipes-btn,
+.social-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.home-info .social-btns {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    gap: 1rem;
+}
+
+.home-info .social-btns a {
+    position: relative;
+    display: inline-flex;
+    padding: 0.8rem;
+    border: 0.2rem solid var(--main-color2);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color2);
+    margin: 0 0.8rem;
+    transition: 0.3s;
+}
+
+.home-info .social-btns a:hover {
+    background: var(--main-color2);
+    color: var(--bg-color);
+}
